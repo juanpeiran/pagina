@@ -8,9 +8,6 @@ a{
     color: black;
 
 }
-.container{
-    max-width: 2400px;
-}
 header{
     display: flex;
     min-height: 70px;
