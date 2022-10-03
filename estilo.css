@@ -7,10 +7,12 @@ body{
     margin: 0;
     
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 h1{font-size: 3.5em;}
-
+h3{font-size: 1.7em;}
 
 button{font-size: 1.5em;
 font-weight: bold;
@@ -76,6 +78,62 @@ nav a:hover{
     text-align: center;
     padding: 200px 12px;
 
+}
+#proyectos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#proyectos .container{
+    padding: 150px;
+}
+#proyectos .proyect{
+    display: flex;
+    justify-content: center;
+}
+#proyectos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#proyectos p{
+    display: block;
+}
+#proyectos .carta{
+   background-position: center center;
+   background-size: cover;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/nave.png");
+    background-size: cover;
+    background-position: center center;
+}   
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/capsula.png");
+    background-size: cover;
+    background-position: center center;
+}
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/productos.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 @media (max-width:700px){
     header{flex-direction: column;
